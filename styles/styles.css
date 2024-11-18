@@ -1,5 +1,10 @@
+:root {
+  --primary-bg-color: darkblue;
+  --secondary-bg-color: #f0f0f0 ;
+
+}
 nav {
-  background-color: darkblue;
+  background-color: var(--primary-bg-color);
   padding: 10px;
 }
 
@@ -10,7 +15,7 @@ nav a {
 }
 
 h1 {
-  color: darkblue;
+  color: var(--primary-bg-color);
 }
 
 main img {
@@ -34,7 +39,7 @@ aside {
   margin: 2rem;
   padding: 1rem;
   border: 1px solid rgba(0, 31, 63, 0.2);
-  background-color: #f0f0f0;
+  background-color: var(--secondary-bg-color);
   color: #333333;
   text-align: center;
 }
