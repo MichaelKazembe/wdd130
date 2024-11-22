@@ -9,6 +9,12 @@
   --neutral-gray: gray; /* For shadows or muted effects */
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 nav {
   background-color: var(--primary-color);
   padding: 10px;
@@ -25,6 +31,7 @@ h1 {
 }
 
 main img {
+  float: right;
   width: 150px;
   height: auto;
   border: 1px solid black;
@@ -42,12 +49,8 @@ main {
 
 aside {
   width: 20rem;
-  margin: 2rem;
-  padding: 1rem;
-  border: 1px solid var(--border-color);
-  background-color: var(--secondary-color);
-  color: var(--text-color);
   text-align: center;
+  position: relative;
 }
 
 aside img {
@@ -55,8 +58,24 @@ aside img {
   height: auto;
 }
 
+aside h2 {
+  position: absolute;
+  top: 30px;
+  left: 118px;
+}
+
 footer {
   margin-top: 4rem;
   border-top: 1px solid var(--footer-border-color);
   text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
 }
