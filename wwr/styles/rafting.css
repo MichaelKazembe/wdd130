@@ -1,0 +1,36 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+/*  */
+:root {
+  --rafting-bg: #f5f5f5;
+  --rafting-color: #333;
+  --rafting-border: 1px solid #ccc;
+  --rafting-border-radius: 5px;
+  --rafting-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --rafting-padding: 10px;
+  --rafting-margin: 10px;
+  --rafting-width: 100%;
+  --rafting-max-width: 500px;
+  --rafting-font-size: 16px;
+  --rafting-line-height: 1.5;
+  --rafting-font-family: "Roboto", sans-serif;
+}
+
+/* Body */
+
+body {
+  font-family: var(--rafting-font-family);
+  font-size: var(--rafting-font-size);
+  line-height: var(--rafting-line-height);
+  background-color: var(--rafting-bg);
+  color: var(--rafting-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0 0 10px;
+}
