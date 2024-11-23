@@ -1,35 +1,57 @@
-/* Import Montserrat Google Font */
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap"); */
-
-/* Import Open Sans Google Font */
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap'); */
-
 :root {
   /* COLORS */
   --secondary-color: #8ecae6;
   --primary-color: #219ebc;
-  --accent1-color-1: #ffb703;
+  --accent1-color: #ffb703;
   --accent2-color: #fb8500;
 }
 
 * {
-  margin: 0 20px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* General Styles */
+html,
 body {
-  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 h1,
 h2 {
   font-family: "Montserrat", sans-serif;
+  color: var(--primary-color);
+}
+
+p {
+  line-height: 1.6;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 .hero {
+  position: relative;
+}
+
+.hero h1 {
+  position: absolute;
+}
+
+.hero img {
+  display: block;
   width: 100%;
+  height: auto;
 }
