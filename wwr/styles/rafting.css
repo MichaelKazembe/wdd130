@@ -1,3 +1,4 @@
+
 :root {
   /* COLORS */
   --secondary-color: #8ecae6;
@@ -33,6 +34,7 @@ h1,
 h2 {
   font-family: "Montserrat", sans-serif;
   color: var(--primary-color);
+ 
 }
 
 h2 {
@@ -62,6 +64,7 @@ article {
   margin: 0 60px;
   bottom: 100px;
   background-color: var(--accent1-color-transparent);
+  
 }
 
 .hero h1 {
@@ -83,29 +86,31 @@ article {
 
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0; 
+  padding: 0; 
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 15px;
+  display: inline; 
+  margin-right: 15px; 
 }
 
 nav ul li a {
-  text-decoration: none;
+  text-decoration: none; 
   color: inherit;
   font-weight: 600;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  text-decoration: underline; 
 }
 
 nav ul li a:active {
-  color: var(--accent1-color);
+  color: var(--accent1-color)
 }
+
 
 section {
   margin: 20px auto;
 }
+
