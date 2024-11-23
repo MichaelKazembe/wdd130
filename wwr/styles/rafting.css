@@ -44,14 +44,32 @@ footer a {
 
 .hero {
   position: relative;
+  margin: 20px 0;
+}
+
+.hero h1,
+article {
+  position: absolute;
+}
+
+.hero article {
+  padding: 20px;
+  margin: 0 auto;
+  top: 80px;
+  background-color: var(--accent1-color);
 }
 
 .hero h1 {
-  position: absolute;
+  background-color: rgb(37, 37, 37);
 }
 
 .hero img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.happy-client {
+  max-width: 20%;
+  float: right;
 }
