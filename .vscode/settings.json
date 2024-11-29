@@ -1,0 +1,7 @@
+{
+  "auto-close-tag.disableOnLanguage": [],
+
+  "[html]": {
+    "editor.defaultFormatter": null
+  }
+}
