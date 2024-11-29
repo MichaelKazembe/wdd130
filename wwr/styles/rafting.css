@@ -150,7 +150,7 @@ header nav {
 .history {
   display: flex;
   justify-content: space-between;
-  align-items: top;
+  align-items: flex-start;
   gap: 20px;
   text-align: left;
 }
@@ -172,7 +172,7 @@ header nav {
 .adventure {
   position: relative;
   display: flex;
-  justify-self: evenly;
+  justify-self: space-evenly;
   flex-wrap: wrap;
   gap: 40px;
   max-width: 1200px;
