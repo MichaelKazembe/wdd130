@@ -43,10 +43,11 @@ p {
   line-height: 1.6;
 }
 
-footer a {
-  text-decoration: none;
+section {
+  margin: 20px auto;
 }
 
+/* Hero Section */
 .hero {
   position: relative;
   margin: 20px 0;
@@ -93,6 +94,7 @@ header {
   align-items: center;
   margin: 0;
   padding: 10px 20px;
+  right: 30px;
   background-color: var(--primary-color);
 }
 
@@ -101,35 +103,41 @@ header {
 }
 
 /* Navbar */
-nav {
-  text-align: left;
+header nav {
+  text-align: center;
   padding: 10px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 10px;
 }
+
 .navigation {
   display: flex;
   justify-content: space-evenly;
-  gap: 20px;
+  align-items: center;
   list-style: none;
+  background-color: #ffffff;
+  border: 1px solid var(--primary-color);
 }
-
 .navigation li {
-  flex: 1 1 auto;
-  padding: 20px 0;
-  margin: 0 20px;
+  flex: 1;
+  margin: 0;
   text-align: center;
   white-space: nowrap;
-  width: auto;
 }
 
 .navigation a {
   display: block;
   text-decoration: none;
-  color: white;
-  padding: 10px;
+  color: var(--primary-color);
+  padding: 10px 20px;
+  border-right: 1px solid var(--accent1-color);
+  background-color: #ffffff;
+  width: max-content;
+}
+
+.navigation li:last-child a {
+  border-right: none;
 }
 
 .navigation a:hover {
@@ -138,6 +146,79 @@ nav {
   text-decoration: underline;
 }
 
-section {
-  margin: 20px auto;
+/* History */
+.history {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  gap: 20px;
+  text-align: left;
+}
+
+.history img {
+  height: auto;
+}
+
+.history-section h2 {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Adventure */
+.adventure-section h2 {
+  text-align: center;
+}
+
+.adventure {
+  position: relative;
+  display: flex;
+  justify-self: evenly;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+}
+
+.adventure img {
+  max-width: 200px;
+}
+
+.adventure figcaption {
+  display: block;
+  padding: 5px 10px;
+  text-align: center;
+  background-color: var(--accent1-color-transparent);
+}
+
+/* footer */
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+footer p {
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+}
+footer nav {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  right: 20px;
+  gap: 20px;
+}
+
+footer nav a {
+  padding-top: 5px;
+  text-decoration: none;
+}
+
+footer nav a:hover img {
+  transform: scale(1.2);
 }
