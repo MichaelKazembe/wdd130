@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form - User Poll</title>
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Michael Kazembe | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <!-- Contact Information -->
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!-- Form Elements -->
+                 <label>Full Name: <input type="text" name="fullname"></label><br>
+                 <label>Email: <input type="email" name="useremail"></label>
+            </fieldset>
+            <!-- Questions -->
+            <fieldset>
+                <legend>Questions</legend>
+                <!-- Form Elements -->
+                <label for="browser">What is your favorite browser? </label>
+                <select name="browser" id="browser">
+                    <option value="Chrome">Chrome</option>
+                    <option value="Safari">Safari</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Edge">Edge</option>
+                </select><br>
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet"><br>
+                <label for="feedback">List the Places you have lived.</label>
+                <textarea 
+                    name="feedback" 
+                    id="feedback" 
+                    rows="4"
+                    placeholder="South Africa, Malawi, United States, Ethiopia">
+                </textarea><br>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2025 | HTML Form - User Poll Activity | Michael Kazembe</p>
+    </footer>
+</body>
+</html>

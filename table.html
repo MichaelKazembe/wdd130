@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <table>
+        <caption>
+            Status of the Members 2021
+        </caption>
+        <!-- Table Header -->
+         <thead>
+            <tr>
+                <!-- Column Headers -->
+                <th scope="col" rowspan="2">Name</th>
+                <th scope="col" rowspan="2">ID</th>
+                <th scope="col" colspan="2">Member Dates</th>
+                <th scope="col" rowspan="2">Balance</th>
+            </tr>
+            <!-- Column 3 Subheaders  -->
+            <tr>
+                <th>Joined</th> <!-- Subheader 1 -->
+                <th>Cancelled</th> <!-- Subheader 2 -->
+            </tr>
+         </thead>
+        <!-- Table Body -->
+         <tbody>
+            <!-- Row 1 -->
+            <tr>
+                <th scope="row">Margaret Nguyen</th> <!-- Row 1 header -->
+                <td>427311</td>
+                <td><time datetime="2020-06-03">June 3, 2010</time></td> <!-- Column 3 Subheader 1 data -->
+                <td>n/a</td> <!-- Column 3 Subheader 2 data -->
+                <td>0.00</td>
+            </tr>
+            <!-- Row 2 -->
+            <tr>
+                <th scope="row">Edvard Galinski</th> <!-- Row 2  header-->
+                <td>533175</td>
+                <td><time datetime="2011-01-13">January 13, 2011</time></td> <!-- Column 3 Subheader 1 data -->
+                <td><time datetime="2017-04-08">April 8, 2017</time></td> <!-- Column 3 Subheader 2 data -->
+                <td>37.00</td>
+              </tr>
+            <!-- Row 3 -->
+            <tr>
+                <th scope="row">Hoshi Nakamura</th> <!-- Row 3 header -->
+                <td>601942</td>
+                <td><time datetime="2012-07-23">July 23, 2012</time></td>
+                <td>n/a</td>
+                <td>15.00</td>
+            </tr>
+         </tbody>
+         <tfoot>
+            <tr>
+                <th scope="row" colspan="4">Total Balance</th>
+                <td>52.00</td>
+            </tr>
+         </tfoot>
+    </table>
+</body>
+</html>
