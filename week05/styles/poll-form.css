@@ -1,4 +1,4 @@
-button,
+/* button,
 input,
 select,
 textarea {
@@ -14,16 +14,60 @@ button {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+} */
+
+:root {
+--background-color: #f3f3f3;
+--primary-color: #112a46;
+--form-bg-color: #e7eaee;
+--text-color: #333;
 }
 
-/* Legend */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.1em;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+header {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+h1 {
+  margin: 1rem;
+  font-size: 1.3em;
+  color: #336c92;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto;
+  width: 700px;
+  margin: 0 auto;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.3rem;
+  padding: 1rem;
+  background-color: var(--form-bg-color);
+}
+
 fieldset {
-    position: relative;
-  }
-  
-  legend {
-    position: absolute;
-    font-weight: bold;
-    bottom: 0;
-    right: 0;
-  }
+  display: grip;
+  grid-gap: 0.5rem;
+  margin: 0.5rem;
+  border: 1px solid rgba(0 0 0 0.3)
+}
+
+legend {
+  font-weight: bold;
+  padding: 0.5rem;
+  color: navy;
+}
