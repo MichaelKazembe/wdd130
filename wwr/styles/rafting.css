@@ -1,6 +1,6 @@
 :root {
   /* COLORS */
-  --secondary-color: #8ecae6;
+  --secondary-color: #8ecae6; /* rgb(142, 202, 230) */
   --primary-color: #219ebc;
   --accent1-color: #ffb703;
   --accent2-color: #fb8500;
@@ -227,4 +227,55 @@ footer nav a {
 
 footer nav a:hover img {
   transform: scale(1.2);
+}
+
+/* form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  max-width: 500px;
+}
+
+form input {
+  padding: 5px;
+}
+
+form button {
+  padding: 10px;
+  background-color: var(--accent1-color);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  width: 100%;
+
+}
+
+fieldset {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  max-width: 600px;
+
+}
+
+fieldset > legend {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input[type="radio"] {
+  margin: 0 5px;
+  background-color: var(--accent1-color);
+
 }
