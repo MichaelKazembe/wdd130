@@ -230,8 +230,32 @@ footer nav a:hover img {
 }
 
 /* CONTACT US PAGE */
-/* Contact form */
 
+/* Contact us hero */
+.contact-hero {
+  position: relative;
+  margin: 20px 0;
+}
+
+.contact-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.contact-hero h1 {
+  position: absolute;
+  display: block;
+  height: auto;
+  width: 100%;
+  top: 50%;
+  padding: 10px 10px;
+  text-align: center;
+  color: var(--page-background-color);
+  background-color: rgba(11, 10, 10, 0.7);
+}
+
+/* Contact form */
 form {
   display: flex;
   flex-direction: column;
