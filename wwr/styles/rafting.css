@@ -260,8 +260,6 @@ footer > a:hover {
   display: block;
   width: 100%;
   height: auto;
-  opacity: 0.8;
-  color: #000;
 }
 
 .contact-hero h1 {
@@ -273,13 +271,20 @@ footer > a:hover {
   padding: 10px 10px;
   color: var(--page-background-color);
   text-shadow: #201f1f 2px 2px 2px;
-  /* background-color: rgba(11, 10, 10, 0.7); */
+  background-color: rgba(11, 10, 10, 0.7);
 }
 
 .contact-hero p {
   position: absolute;
-  top: 25%;
-  right: 20%;
+  display: block;
+  height: auto;
+  width: 100%;
+  top: 30%;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 10px;
+  color: var(--page-background-color);
+  text-shadow: #0b0a0a 2px 2px 2px;
 }
 
 /* Company information */
@@ -371,7 +376,6 @@ footer > a:hover {
   width: 200px;
   height: 0;
   padding: 20px;
-  border: 1px solid var(--secondary-color);
 }
 
 .staff img {
