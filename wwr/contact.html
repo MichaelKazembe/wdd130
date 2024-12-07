@@ -40,101 +40,142 @@
     </header>
     <!-- MAIN -->
     <main>
-      <!-- ABOUT NYASA RAFTING -->
+      <!-- CONTACT NYASA RAFTING -->
       <!-- hero section -->
       <div class="contact-hero">
-        <img src="images/hero-image.jpg" alt="Hero Image">
+        <img src="/images/Lake-Malawi.jpg" alt="contact-image">
         <h1>Contact Us</h1>
+        <p class="contact-us-p">We love questions and feedback - and we're always happy to help! 
+          Here are some ways to contact us.</p>
       </div>
+      <!-- Company Section -->
        <section>
         <h2>Company Information</h2>
-        <!-- Contact Information -->
-        <p>
-          <strong>Address:</strong> 235 Liwonde Barrage, Shire River Road, Liwonde, Malawi<br>
-          <strong>Phone:</strong> +265 999 999 999<br>
-          <strong>Email:</strong> info@nyasarafting.com<br>
-        </p>
-        <!-- Map -->
-        <p><strong>Location</strong></p>
-        <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12035.53796098942!2d35.212257458081524!3d-15.060920681573979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18d92803c84b3a6f%3A0x558741722a06c8e7!2sShire%20River!5e0!3m2!1sen!2smw!4v1733490599485!5m2!1sen!2smw" 
-            width="600" 
-            height="450" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+        <div class="company-info">
+          <!-- contacts -->
+          <div class="contacts">
+            <!-- Location -->
+            <div class="location">
+              <img src="images/facebook.svg" alt="Location">
+              <h3>Location</h3>
+              <p>Liwonde Barage, Liwonde, Malawi</p>
+            </div>
+            <!-- email -->
+            <div class="email">
+              <img src="images/facebook.svg" alt="Location">
+              <h3>Email</h3>
+              <p>info@nyasarafting.com</p>
+            </div>
+            <!-- phone -->
+            <div class="phone">
+              <img src="images/facebook.svg" alt="Location">
+              <h3>Phone</h3>
+              <p>+265 999 999 999</p>
+            </div>
+          </div>
+           <!-- Map -->
+          <h3>Map</h3>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12035.53796098942!2d35.212257458081524!3d-15.060920681573979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18d92803c84b3a6f%3A0x558741722a06c8e7!2sShire%20River!5e0!3m2!1sen!2smw!4v1733490599485!5m2!1sen!2smw" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
         </div>
        </section>
-      <!-- Our Staff -->
-      <section class="adventure-section">
-        <h2>Our Stuff</h2>
-        <p>
+      <hr>
+      <!-- Team Section -->
+      <section class="staff-section">
+        <h2>Our Staff</h2>
+        <p class="contact-us-p">
           Our team of experienced guides is ready to take you on an unforgettable
           journey through the stunning landscapes of Malawi. Whether you are an
           experienced rafter or a first-timer, we have the perfect trip for you.
         </p>
-        <div class="adventure">
-          <figure>
-            <img src="images/adventure-1.jpg" alt="adventure-1">
-              <figcaption>CEO</figcaption>
-          </figure>
-          <figure>
-            <img src="images/adventure-2.jpg" alt="adventure-2">
-              <figcaption>Manager</figcaption>
-          </figure>
-          <figure>
-            <img src="images/adventure-3.jpg" alt="adventure-3">
-              <figcaption>Chief Instructor</figcaption>
-          </figure>
+        <div class="staff">
+          <div class="ceo">
+            <figure>
+              <img src="images/CEO.jpg" alt="CEO">
+                <figcaption>CEO</figcaption>
+            </figure>
+          </div>
+          <div class="manager">
+            <figure>
+              <img src="images/manager.jpg" alt="manager">
+                <figcaption>Manager</figcaption>
+            </figure>
+          </div>
+          <div class="chief">
+            <figure>
+              <img src="images/Chief-instructor.jpg" alt="Chief-instructor">
+                <figcaption>Chief-instructor</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
-      <!-- Contact US -->
+      <hr>
+      <!-- Contact Section -->
       <section class="contact-section">
         <h2>Contact Us</h2>
-        <p>
-          We would love to hear from you! Reach out for General Inquirys, inquiries, or
+        <p class="contact-us-p">
+          We would love to hear from you! Reach out for General Inquiries, inquiries, or
           information about our thrilling rafting adventures in Malawi.
         </p>
-
         <!-- Contact Form -->
         <form>
+          <h3>Send us a message</h3>
+          <!-- User Details Fieldset -->
           <fieldset>
-            <legend>Your Details</legend>
-            <label for="username" class="form-label">Username:</label>
-            <input type="text" id="username" name="username"><br>
-            <label for="email" class="email">Email:</label>
-            <input type="email" id="email" name="email"><br>
+            <legend>User details</legend>
+            <label for="username" class="form-label">Username <span class="required">*</span></label>
+            <input type="text" id="username" name="username" placeholder="@username" required><br>
+        
+            <label for="email" class="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required><br>
           </fieldset>
+        
+          <!-- Reason for Contact Fieldset -->
           <fieldset>
-            <legend>Reason for Contact</legend>
-            <label>
-              <input type="radio" name="reason" value="General Inquiry">
+            <legend>Reason for contact</legend>
+            <label for="reason-general">
+              <input type="radio" id="reason-general" name="reason" value="General Inquiry">
               General Inquiry
             </label><br>
-            <label>
-              <input type="radio" name="reason" value="Reservation Question">
+        
+            <label for="reason-reservation">
+              <input type="radio" id="reason-reservation" name="reason" value="Reservation Question">
               Reservation Question
             </label><br>
-            <label>
-              <input type="radio" name="reason" value="Website Suggestion">
+        
+            <label for="reason-suggestion">
+              <input type="radio" id="reason-suggestion" name="reason" value="Website Suggestion">
               Website Suggestion
             </label><br>
           </fieldset>
+        
+          <!-- Message Fieldset -->
           <fieldset>
             <legend>Message</legend>
-            <textarea name="message" id="message" cols="30" rows="5" placeholder="Type Message"></textarea>
+            <label for="message" class="form-label">Your Message <span class="required">*</span></label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Type Message" required></textarea>
           </fieldset>
-          <label for="subscribe" class="subscribe"></label>
-          <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-          Please subscribe me to the monthly newsletter
-          <button type="submit">Submit</button>
+          <p><span>* </span>required field</p>
+          <!-- Newsletter Subscription -->
+          <label for="subscribe" class="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            Please subscribe me to the monthly newsletter
+          </label><br>
+        
+          <!-- Submit Button -->
+          <button type="submit">Send Message</button>
         </form>
       </section>
     </main>
     <!-- FOOTER -->
     <footer>
       <p>&copy; 2024 Nyasa Rafting 🇲🇼 Michael Kazembe</p>
+      <a href="https://app.moqups.com/o6FS8p8B6F5EexhBwPKE75ENIrSkcg0J/view/page/ad12de680?ui=0">Wireframe</a>
       <nav>
         <a href="https://facebook.com">
           <img

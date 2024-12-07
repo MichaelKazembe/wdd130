@@ -7,6 +7,7 @@
   --accent1-color-transparent: rgba(255, 183, 3, 0.85);
   --page-background-color: #fff;
   --text-color: #0b0a0a;
+  --background-color: #f2f2f2;
 }
 
 * {
@@ -50,6 +51,7 @@ p {
 
 section {
   margin: 20px auto;
+  padding-bottom: 40px;
 }
 
 /* Hero Section */
@@ -66,7 +68,7 @@ article {
 .hero article {
   padding: 20px;
   margin: 0 60px;
-  bottom: 100px;
+  bottom: 80px;
   background-color: var(--accent1-color-transparent);
 }
 
@@ -152,6 +154,54 @@ header nav {
   text-decoration: underline;
 }
 
+/* footer */
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  margin-top: 40px;
+  background-color: var(--secondary-color);
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  padding-right: 20px;
+}
+footer nav {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  right: 20px;
+  gap: 20px;
+}
+
+footer nav a {
+  padding-top: 5px;
+  text-decoration: none;
+}
+
+footer nav a:hover img {
+  transform: scale(1.2);
+}
+
+footer > a {
+  padding: 10px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: small;
+}
+
+footer > a:hover {
+  color: var(--accent2-color);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 /* History */
 .history {
   display: flex;
@@ -172,6 +222,7 @@ header nav {
 
 /* Adventure */
 .adventure-section h2 {
+  padding: 30px;
   text-align: center;
 }
 
@@ -195,39 +246,6 @@ header nav {
   background-color: var(--accent1-color-transparent);
 }
 
-/* footer */
-footer {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: var(--secondary-color);
- 
-}
-
-footer p {
-  margin: 0;
-  font-size: 14px;
-  text-align: center;
-}
-footer nav {
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  right: 20px;
-  gap: 20px;
-}
-
-footer nav a {
-  padding-top: 5px;
-  text-decoration: none;
-}
-
-footer nav a:hover img {
-  transform: scale(1.2);
-}
 
 /* CONTACT US PAGE */
 
@@ -241,6 +259,8 @@ footer nav a:hover img {
   display: block;
   width: 100%;
   height: auto;
+  opacity: 0.8;
+  color: #000;
 }
 
 .contact-hero h1 {
@@ -248,32 +268,176 @@ footer nav a:hover img {
   display: block;
   height: auto;
   width: 100%;
-  top: 50%;
+  top: 15%;
   padding: 10px 10px;
   text-align: center;
   color: var(--page-background-color);
-  background-color: rgba(11, 10, 10, 0.7);
+  text-shadow: #201f1f 2px 2px 2px;
+  /* background-color: rgba(11, 10, 10, 0.7); */
+}
+
+.contact-hero p {
+  position: absolute;
+  top: 25%;
+  padding: 0 80px;
+}
+
+/* Company information */
+.company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* contacts */
+.contacts {
+  display: flex;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.contact-us-p {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.contacts div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 220px;
+  height: 200px;
+  padding: 20px;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--background-color);
+  text-align: center;
+  
+}
+
+.contacts img {
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+}
+
+.contacts h3 {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.contacts p {
+  font-size: 12px;
+  color: var(--text-color);
+}
+
+/* Map */
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  border: none;
+}
+
+.map iframe {
+  width: 100%; 
+  height: 400px;
+  margin: 60px; 
+}
+
+/* Our Staff Section */
+.staff {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+  height: 400px;
+  /* gap: 20px; */
+}
+
+.staff figure {
+  width: 200px;
+  height: 450px;
+}
+
+.staff div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 200px;
+  height: 0;
+  padding: 20px;
+  border: 1px solid var(--secondary-color);
+}
+
+.staff img {
+  width: 200px;
+  height: auto;
+}
+
+.staff figcaption {
+  display: block;
+  padding: 5px 10px;
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--accent1-color-transparent);
 }
 
 /* Contact form */
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin: 20px auto;
+  align-items: left;
+  gap: 15px;
+  margin: 40px auto;
   padding: 20px;
   border: 1px solid var(--primary-color);
-  border-radius: 5px;
+  border-radius: 8px;
   max-width: 500px;
 }
 
-form input {
-  padding: 5px;
+form h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+  text-align: center;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px;
+  border-radius: 8px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+  vertical-align: middle;
+  background-color: var(--background-color);
+}
+
+form textarea {
+  resize: vertical;
 }
 
 form button {
-  padding: 10px;
+  padding: 12px;
   background-color: var(--accent1-color);
   color: var(--text-color);
   border: none;
@@ -281,26 +445,53 @@ form button {
   font-size: 16px;
   font-weight: 700;
   border-radius: 5px;
-  width: 100%;
+  transition: background-color 0.3s ease;
+}
 
+form button:hover {
+  background-color: var(--accent2-color);
 }
 
 fieldset {
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 5px;
-  max-width: 600px;
-
+  border: 2px solid #f2f2f2;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
 }
 
 fieldset > legend {
   font-size: 16px;
   font-weight: 600;
+  color: var(--primary-color);
+  padding: 0 5px;
 }
 
-input[type="radio"] {
-  margin: 0 5px;
-  background-color: var(--accent1-color);
+form .subscribe {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  gap: 5px;
+}
 
+.required {
+  color: rgb(147, 5, 5);
+  font-weight: bold;
+
+  padding: 0;
+}
+
+form span {
+  color: rgb(147, 5, 5);
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+form p {
+  font-size: small;
+  font-style: italic;
+}
+/* divider */
+hr {
+  border: 1px solid var(--accent1-color-transparent);
+  margin: 60px 0;
 }
