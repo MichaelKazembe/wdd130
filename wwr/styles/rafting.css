@@ -391,7 +391,6 @@ footer > a:hover {
 form {
   display: flex;
   flex-direction: column;
-  align-items: left;
   gap: 15px;
   margin: 40px auto;
   padding: 20px;
