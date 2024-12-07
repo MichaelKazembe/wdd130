@@ -252,7 +252,8 @@ footer > a:hover {
 /* Contact us hero */
 .contact-hero {
   position: relative;
-  margin: 20px 0;
+  margin: 20px auto;
+  text-align: center;
 }
 
 .contact-hero img {
@@ -270,7 +271,6 @@ footer > a:hover {
   width: 100%;
   top: 15%;
   padding: 10px 10px;
-  text-align: center;
   color: var(--page-background-color);
   text-shadow: #201f1f 2px 2px 2px;
   /* background-color: rgba(11, 10, 10, 0.7); */
@@ -279,7 +279,7 @@ footer > a:hover {
 .contact-hero p {
   position: absolute;
   top: 25%;
-  padding: 0 80px;
+  right: 20%;
 }
 
 /* Company information */
@@ -289,16 +289,17 @@ footer > a:hover {
   align-items: center;
 }
 
+.company-section {
+  padding: 30px;
+  text-align: center;
+}
+
 /* contacts */
 .contacts {
   display: flex;
   margin: 20px auto;
   flex-wrap: wrap;
   gap: 40px;
-}
-.contact-us-p {
-  text-align: center;
-  margin: 20px auto;
 }
 
 .contacts div {
