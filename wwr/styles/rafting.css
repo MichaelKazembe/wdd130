@@ -7,6 +7,7 @@
   --accent1-color-transparent: rgba(255, 183, 3, 0.85);
   --page-background-color: #fff;
   --text-color: #0b0a0a;
+  --text-shadow-color: #0b0a0a 2px 2px 2px;
   --background-color: #f2f2f2;
 }
 
@@ -200,6 +201,36 @@ footer > a:hover {
   color: var(--accent2-color);
   font-weight: 700;
   text-decoration: underline;
+}
+
+/* Button */
+
+button {
+  padding: 12px;
+  background-color: var(--accent1-color);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: white;
+  color: var(--accent1-color);
+}
+
+.secondary-button {
+  background-color: white;
+  color: var(--text-color);
+  border: none;
+}
+
+.secondary-button:hover {
+  background-color: var(--accent1-color);
+  color: white;
 }
 
 /* History */
@@ -440,22 +471,6 @@ form textarea {
   resize: vertical;
 }
 
-form button {
-  padding: 12px;
-  background-color: var(--accent1-color);
-  color: var(--text-color);
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 700;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-form button:hover {
-  background-color: var(--accent2-color);
-}
-
 fieldset {
   border: 2px solid #f2f2f2;
   border-radius: 10px;
@@ -498,4 +513,47 @@ form p {
 hr {
   border: 1px solid var(--accent1-color-transparent);
   margin: 60px 0;
+}
+
+/* HOME PAGE */
+
+/* Hero Section */
+.hero-section {
+  margin: 20px 0;
+  background-image: url("../images/hero-image.jpg");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: 100%;
+  height: 600px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.home-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center; 
+}
+
+.hero-content {
+  padding: 20px;
+  background-color: rgba(11, 10, 10, 0.7)
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--accent1-color);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: white;
+
 }
