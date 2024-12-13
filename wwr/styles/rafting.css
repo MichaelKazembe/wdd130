@@ -55,6 +55,8 @@ section {
   padding-bottom: 40px;
 }
 
+/* ABOUT US PAGE */
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -77,11 +79,14 @@ article {
   display: block;
   height: auto;
   width: 100%;
-  top: 40px;
+  top: 80px;
+  font-size: 2rem;
   padding: 10px 10px;
   text-align: center;
-  color: var(--page-background-color);
+  color: var(--accent1-color);
   background-color: rgba(11, 10, 10, 0.7);
+  margin-bottom: 15px;
+  padding: 20px;
 }
 
 .hero img {
@@ -102,7 +107,6 @@ header {
   align-items: center;
   margin: 0;
   padding: 10px 20px;
-  right: 30px;
   background-color: var(--primary-color);
 }
 
@@ -218,6 +222,14 @@ button {
   transition: background-color 0.3s ease;
 }
 
+button a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 button:hover {
   background-color: white;
   color: var(--text-color);
@@ -246,17 +258,21 @@ button:hover {
 
 .history img {
   height: auto;
+  width: 30%;
+  border: 4px solid var(--accent1-color);
 }
 
 .history-section h2 {
-  padding: 10px;
+  padding: 30px auto;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 /* Adventure */
 .adventure-section h2 {
   padding: 30px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .adventure {
@@ -286,6 +302,7 @@ button:hover {
   position: relative;
   margin: 20px auto;
   text-align: center;
+  
 }
 
 .contact-hero img {
@@ -299,11 +316,14 @@ button:hover {
   display: block;
   height: auto;
   width: 100%;
+  font-size: 2rem;
   top: 15%;
   padding: 10px 10px;
   color: var(--accent1-color);
   text-shadow: #201f1f 2px 2px 2px;
   background-color: rgba(11, 10, 10, 0.7);
+  margin-bottom: 15px;
+  padding: 20px;
 }
 
 .contact-hero p {
@@ -313,7 +333,6 @@ button:hover {
   width: 100%;
   top: 30%;
   color: #fff;
-  font-size: 18px;
   padding: 10px 10px;
   color: var(--page-background-color);
   text-shadow: #0b0a0a 2px 2px 2px;
@@ -388,10 +407,10 @@ button:hover {
 .staff {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: baseline;
   height: 400px;
-  /* gap: 20px; */
+  gap: 10px;
 }
 
 .staff figure {
@@ -407,6 +426,7 @@ button:hover {
   width: 200px;
   height: 0;
   padding: 20px;
+  margin: 20px auto;
 }
 
 .staff img {
@@ -509,7 +529,8 @@ form p {
   font-size: small;
   font-style: italic;
 }
-/* divider */
+
+/* Horizontal Divider */
 hr {
   border: 1px solid var(--accent1-color-transparent);
   margin: 60px auto;
@@ -521,7 +542,7 @@ hr {
 /* Hero Section */
 .hero-section {
   margin: 20px 0;
-  background-image: url("../images/hero-image.jpg");
+  background-image: url("../images/home-hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -550,6 +571,10 @@ hr {
   font-size: 2rem;
   margin-bottom: 10px;
   color: var(--accent1-color);
+  font-size: 2rem;
+  margin-bottom: 15px;
+  padding: 20px;
+
 }
 
 .hero-content p {
@@ -565,19 +590,27 @@ hr {
   margin-right: 0;
 }
 
+
+.catch-phrase {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 40px 0;
+  padding: 40px;
+}
+
 /* NEWSLETTER SECTION */
 
 .newsletter {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   margin: 40px auto;
   padding: 80px;
   gap: 60px;
   width: 100%;
-  height: 500px;
+  height: 600px;
   background-color: var(--background-color);
 }
 
@@ -590,22 +623,23 @@ hr {
   flex-direction: column;
   justify-content: center;
   width: 50%;
+  height: auto;
 }
 
-.newsletter form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin: 40px auto;
-  padding: 20px;
-  border: 1px solid var(--primary-color);
-  border-radius: 8px;
-}
 
 .newsletter form input {
   padding: 10px;
   font-size: 14px;
   background-color: white;
+}
+
+.newsletter form {
+  text-align: left;;
+
+}
+
+.newsletter button {
+  margin-top: 20px;
 }
 
 /* OFFERINGS SECTION */
@@ -709,7 +743,7 @@ hr {
 .testimony h4 {
   font-size: 16px;
   font-weight: 600;
-  color: var(--primary-color);
+  color: var(--text-color);
   text-align: right;
 }
 
@@ -720,7 +754,7 @@ hr {
   margin: 40px auto;
   padding: 30px 20px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/happy-client.jpg") no-repeat center/cover;
+    url("../images/rafting-helmets.jpg") no-repeat center/cover;
   max-width: 800px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -735,21 +769,16 @@ hr {
   color: white;
 }
 
-.cta-button a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
 /* TRIPS */
 
 /* Hero Section */
 .trip-hero {
-  background-image: url("../images/hero-image.jpg");
+  background-image: url("../images/hero-trips.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   width: 100%;
+  height: 400px;
   text-align: center;
   padding: 40px;
 }
@@ -766,10 +795,12 @@ hr {
 .trip-hero p {
   margin-bottom: 20px;
   color: white;
+  text-shadow: var(--text-shadow-color);
 }
 
-.trip-hero a {
+.trip-hero button a {
   text-decoration: none;
+  color: var(--text-color);
 }
 
 /* Trip Descriptions */
