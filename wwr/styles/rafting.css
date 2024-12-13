@@ -214,12 +214,13 @@ button {
   font-size: 16px;
   font-weight: 700;
   border-radius: 5px;
+  border: 2px solid var(--accent1-color);
   transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: white;
-  color: var(--accent1-color);
+  color: var(--text-color);
   border: 2px solid var(--accent1-color);
 }
 
@@ -278,7 +279,6 @@ button:hover {
   background-color: var(--accent1-color-transparent);
 }
 
-
 /* CONTACT US PAGE */
 
 /* Contact us hero */
@@ -301,7 +301,7 @@ button:hover {
   width: 100%;
   top: 15%;
   padding: 10px 10px;
-  color: var(--page-background-color);
+  color: var(--accent1-color);
   text-shadow: #201f1f 2px 2px 2px;
   background-color: rgba(11, 10, 10, 0.7);
 }
@@ -332,6 +332,7 @@ button:hover {
 }
 
 /* contacts */
+
 .contacts {
   display: flex;
   margin: 20px auto;
@@ -350,7 +351,6 @@ button:hover {
   border: 1px solid var(--secondary-color);
   background-color: var(--background-color);
   text-align: center;
-  
 }
 
 .contacts img {
@@ -364,9 +364,8 @@ button:hover {
   color: var(--text-color);
 }
 
-.contacts p {
-  font-size: 12px;
-  color: var(--text-color);
+.contact-us-p {
+  text-align: center;
 }
 
 /* Map */
@@ -380,9 +379,9 @@ button:hover {
 }
 
 .map iframe {
-  width: 100%; 
+  width: 100%;
   height: 400px;
-  margin: 60px; 
+  margin: 60px;
 }
 
 /* Our Staff Section */
@@ -513,7 +512,8 @@ form p {
 /* divider */
 hr {
   border: 1px solid var(--accent1-color-transparent);
-  margin: 60px 0;
+  margin: 60px auto;
+  max-width: 65%;
 }
 
 /* HOME PAGE */
@@ -523,13 +523,13 @@ hr {
   margin: 20px 0;
   background-image: url("../images/hero-image.jpg");
   background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 600px;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-hero {
@@ -538,12 +538,12 @@ hr {
   align-items: center;
   width: 100%;
   height: 100%;
-  text-align: center; 
+  text-align: center;
 }
 
 .hero-content {
-  padding: 20px;
-  background-color: rgba(11, 10, 10, 0.7)
+  padding: 40px;
+  background-color: rgba(11, 10, 10, 0.7);
 }
 
 .hero-content h1 {
@@ -553,10 +553,16 @@ hr {
 }
 
 .hero-content p {
-  font-size: 1.2rem;
   margin-bottom: 20px;
   color: white;
+}
 
+.hero-content button {
+  margin-right: 20px;
+}
+
+.hero-content button + button {
+  margin-right: 0;
 }
 
 /* NEWSLETTER SECTION */
@@ -594,13 +600,242 @@ hr {
   padding: 20px;
   border: 1px solid var(--primary-color);
   border-radius: 8px;
-  
 }
 
 .newsletter form input {
-
   padding: 10px;
   font-size: 14px;
   background-color: white;
+}
 
+/* OFFERINGS SECTION */
+.offering-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+.offerings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.offerings div {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offerings div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.offerings img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.offerings article {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.offerings article h3 {
+  color: var(--accent1-color);
+}
+
+.offerings article p {
+  font-size: small;
+  margin: 8px 0 0;
+  color: white;
+}
+
+.offerings div:hover article {
+  transform: translateY(-10px);
+}
+
+/* TESTIMONIES SECTION */
+.testimonies-section {
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.testimonies-section h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.testimonies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.testimony {
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimony p {
+  font-size: 14px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.testimony h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: right;
+}
+
+/* CALL TO ACTION SECTION */
+
+.cta-section {
+  text-align: center;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/happy-client.jpg") no-repeat center/cover;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cta-section h2 {
+  color: var(--accent1-color);
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.cta-button a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* TRIPS */
+
+/* Hero Section */
+.trip-hero {
+  background-image: url("../images/hero-image.jpg");
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+}
+
+.trip-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--accent1-color);
+  background-color: rgba(11, 10, 10, 0.7);
+  padding: 20px;
+  width: 100%;
+}
+
+.trip-hero p {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.trip-hero a {
+  text-decoration: none;
+}
+
+/* Trip Descriptions */
+.trip-descriptions {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.trip-descriptions h2 {
+  margin-bottom: 20px;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.trip-item {
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+  overflow: hidden;
+  padding: 15px;
+}
+
+.trip-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 4px solid var(--accent1-color);
+}
+
+.trip-item h3 {
+  margin: 15px 0;
+  color: var(--text-color);
+}
+
+.trip-item p {
+  font-size: small;
+}
+
+/* Trip Table */
+.trip-table {
+  margin: 40px 0;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.trip-table th,
+.trip-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.trip-table th {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.trip-table tr:nth-child(even) {
+  background-color: var(--background-color);
+}
+
+.trip-table tr:hover {
+  background-color: var(--accent1-color);
 }
