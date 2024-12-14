@@ -48,12 +48,10 @@
             <p>
               Discover Malawi’s breathtaking rivers and thrilling rapids with the best rafting company. Your adventure begins here!
             </p>
-            <button>
-              <a href="trips.html">Book A Trip</a>
-            </button>
-            <button class="secondary-button">
-              <a href="about.html">Discover More</a>
-            </button>
+            <div class="btns">
+              <a href="trips.html" class="button-link">Book A Trip</a>      
+              <a href="about.html" class="secondary-button">Discover More</a>
+            </div>
           </div>
         </div>
       </section>
@@ -68,9 +66,7 @@
         <p>
           Book your trip today and experience the best rafting adventure in Malawi. Our professional guides will ensure a safe and thrilling experience for you!
         </p>
-        <button class="cta-button">
-          <a href="trips.html">Book A Trip</a>
-        </button>
+        <a href="trips.html" class="button-link">Book A Trip</a>
       </section>
       <hr>
 
@@ -134,6 +130,7 @@
                 Experience the best kayaking experience on the Shire River. Our
                 guides are experienced and will ensure you have a great time.
               </p>
+            </article>
           </div>
           <div>
             <img src="images/river-camping.jpg" alt="Camping">
@@ -143,6 +140,7 @@
                 Experience the best camping experience on the Shire River. Our
                 guides are experienced and will ensure you have a great time.
               </p>
+            </article>
           </div>
         </div>
       </section>  
@@ -161,9 +159,9 @@
           </p>
           <form>
             <label for="name">Name <span class="required">*</span></label>
-            <input type="text" placeholder="Enter your fullname">
+            <input type="text" id="name" placeholder="Enter your fullname">
             <label for="email">Email <span class="required">*</span></label>
-            <input type="email" placeholder="Enter your email">
+            <input type="email" id="email" placeholder="Enter your email">
             <button type="submit">Subscribe</button>
           </form>
         </div>
